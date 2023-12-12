@@ -39,15 +39,6 @@ const studentSlice = createSlice({
         if (index != -1) {
             state.arrStudent[index] = action.payload;
         }
-    },
-    findStudent: (state, action)=>{
-        console.log(action);
-        const index = state.arrStudent.findIndex((item, index)=>{
-            return item.maSinhVien = action.payload.maSinhVien;
-        });
-        if (index != -1) {
-            state.arrStudent[index] = action.payload;
-        }
     }
   }
 });
